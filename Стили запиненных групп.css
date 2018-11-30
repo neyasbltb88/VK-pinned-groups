@@ -1,0 +1,41 @@
+/*** Подготовка меню к вставке избранных групп ***/
+
+
+/* Скрытие футера в меню */
+
+.left_menu_nav_wrap {
+    /*display: none;*/
+}
+
+#side_bar .side_bar_inner ol {
+    max-height: 80vh;
+    /* Если футер меню скрыт, то использовать высоту 88vh */
+    /*max-height: 88vh;*/
+    overflow: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+/* Контейнер для запиненных групп */
+
+.pinned_groups ul {
+    list-style: none;
+    padding-left: 8px;
+}
+
+
+/* Аватарка запиненной группы */
+
+#side_bar .pinned_groups .pinned_item .left_icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+    margin: 2px 4px;
+    border-radius: 50%;
+}
+
+
+/* --- Подготовка меню к вставке избранных групп --- */
