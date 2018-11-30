@@ -1,3 +1,10 @@
+if (!window.log_color) {
+    // Автоподгрузка цветной консоли
+    fetch('https://raw.githubusercontent.com/neyasbltb88/VK-pinned-groups/master/color_log.js')
+        .then(response => response.text())
+        .then(response => eval(response))
+}
+
 console.log('%c%s', (window.log_color) ? window.log_color.green : '', `*PinnedGroups* Скрипт вставлен на страницу: ${document.title}`);
 
 var groupsJson = {
@@ -206,3 +213,4 @@ if (document.title) {
 // вызовите вручную в консоли функцию definePinnedClasses()
 
 // Для цветной консоли, в консоль нужно вставить содержимое color_log.js
+// UPD: сделал автоподгрузку color_log.js с репозитория https://github.com/neyasbltb88/VK-pinned-groups
